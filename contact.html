@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortFlix - Personal Portfolio Website </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Bindu's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/">Certificates</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+
+        </div>
+
+      </nav>
+    </header>
+
+
+    <div class="main">
+      <div class="contactform">
+        <h1>Contect Me Here....!</h1>
+        <form onsubmit="sendEmail();reset();return false;">
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Name</label>
+            <input type="name" class="form-control" id="name" aria-describedby="emailHelp">
+
+          </div>
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="clientphone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="phone">
+          </div>
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Enquiry</label>
+            <input type="enquiry" class="form-control" id="message" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3 " id="form-check">
+            <input type="checkbox" class="form-check-input" id="isclient">
+            <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+          </div>
+
+          <button type="submit" class="btn btn-sm">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          SecureToken:"b22231cf-c6ba-468f-87de-87e8442f1245",
+          To: 'bindiya7385@gmail.com',
+          From: "bindiya7385@gmail.com",
+          Subject: "New Contact Form Enquiry",
+          Body: "Name:" + document.getElementById("name").value
+            + "<br> Email:" + document.getElementById("email").value
+            + "<br> Phone:" + document.getElementById("phone").value
+            + "<br> Message:" + document.getElementById("message").value
+
+        }).then(
+          message => alert("Message Sent Successfully")
+        );
+      }
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFlix - Personal Portfolio Website </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Bindu's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/">Certificates</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hey, My name is <span class="purple">Bindiya </span>
+                <div> I am a technical Student</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="resume.pdf">
+                <button class="btn">Download Resume</button></a>
+                <a href="https://github.com/Bindiya1234">
+                <button class="btn">Visit Github</button></a>
+                </div>
+                
+
+            </div>
+            <div class="rightSection">
+                <img src="bg2.png" alt="">
+            </div>
+
+
+        </section>
+
+        <!-------------------------- About us------------------------>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="edu1.jpg">
+                    <div class="vertical-title">MCA</div>
+                    <div class="vertical-desc">Kavayatiri Bahinabai Chaudhari North Maharashtra University(Institute of
+                        Management and Research),Jalgaon ,Maharashtra<br>
+                        2022-2024<br>
+                        Persuing</div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="edu1.jpg">
+                    <div class="vertical-title">BSC(CS)</div>
+                    <div class="vertical-desc">
+                        Moolji Jaitha College ,Jalgaon,Maharashtra<br>
+                        2019-2022<br>
+                        CGPA:- 9.20 Percentage:-76.70%
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="edu1.jpg">
+                    <div class="vertical-title">Higher Secondary(science)</div>
+                    <div class="vertical-desc">
+                        Dr.Annasehab G.D.Bendale Mahila Mahavidayalya,Jalgaon,Maharashtra<br>
+                        2017-2019<br>
+                        Precentage:-62%
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="edu1.jpg">
+                    <div class="vertical-title">Secondary</div>
+                    <div class="vertical-desc">
+                        Roseland Englis Medium High School ,Jalgaon,Maharashtra<br>
+                        2017<br>
+                        Percentage:-84.20%
+                    </div>
+                </div>
+
+
+            </div>
+
+            </div>
+            </div>
+
+        </section>
+
+        <!--------------------------end aboutus---------------------->
+
+<br><br><br><br><hr>
+ <section class="thirdSection"> 
+<div class="main">
+    <div class="contactform">
+     <h1>Contect Me Here....!</h1>
+     <form>
+       <div class="mb-3">
+         <label for="clientemail" class="form-label">Name</label>
+         <input type="name" class="form-control" id="clientemail" aria-describedby="emailHelp">
+         
+       </div>
+         <div class="mb-3">
+           <label for="clientemail" class="form-label">Email address</label>
+           <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+           <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+         </div>
+         <div class="mb-3">
+           <label for="clientphone" class="form-label">Phone</label>
+           <input type="phone" class="form-control" id="clientphone">
+         </div>
+         <div class="mb-3">
+           <label for="clientemail" class="form-label">Enquiry</label>
+           <input type="enquiry" class="form-control" id="clientemail" aria-describedby="emailHelp">
+           </div>
+         <div class="mb-3 "id="form-check">
+           <input type="checkbox" class="form-check-input" id="isclient">
+           <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+         </div>
+         
+         <button type="submit" class="btn btn-sm">Submit</button>
+       </form>
+    </div>
+     </div>
+ 
+ </div>
+</div>   
+</section>
+    </main>
+    <footer class="foot">Bindiya's Portfolio &copy;</footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'BackEnd Developer', 'FrontEnd Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
