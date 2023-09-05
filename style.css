@@ -129,7 +129,7 @@ hr{
 
 
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1300px) {
     .box{
         flex-direction: column;
     
